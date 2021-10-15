@@ -106,7 +106,7 @@ def merge_images():
     #First Image
     image_one = Image.open("Capture.PNG") 
     #Second Image
-    image_two = Image.open("github.PNG")
+    image_two = Image.open("github.png")
     Image.Image.paste(image_one, image_two, (400, 100))
     fig = plt.figure()
     plt.imshow(image_one)
