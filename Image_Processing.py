@@ -4,9 +4,7 @@ import matplotlib.pyplot as plt
 
 st.title("Image Processing and Streamlit")
 
-#Image name
-path = "[IMAGES]-image-processing-streamlit\\"
-image = Image.open(path+"Capture.PNG") 
+image = Image.open("Capture.PNG") 
 
 def main():
     page = st.sidebar.selectbox(
@@ -106,9 +104,9 @@ def crop_image():
 
 def merge_images():
     #First Image
-    image_one = Image.open(path+"Capture.PNG") 
+    image_one = Image.open("Capture.PNG") 
     #Second Image
-    image_two = Image.open(path+"github.PNG")
+    image_two = Image.open("github.PNG")
     Image.Image.paste(image_one, image_two, (400, 100))
     fig = plt.figure()
     plt.imshow(image_one)
