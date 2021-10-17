@@ -1,6 +1,4 @@
 import streamlit as st
-import base64
-import os
 
 Page_Config = {"page_title": 'OP Digital Profile', 
                "page_icon": "op_logo.PNG",
@@ -25,12 +23,6 @@ st.write(""" ### Hello World! :sunglasses: \n ##### Welcome to my online home. \
         I have created this in order to connect with people.""")
 
 st.sidebar.code("Life is what You make it.")
-#st.sidebar.code()
-
-def img_to_bytes(img_path):
-    img_bytes = os.path(img_path).read_bytes()
-    encoded_img = base64.b64encode(img_bytes).decode()
-    return encoded_img
 
 def menubar():
     option = st.selectbox(
