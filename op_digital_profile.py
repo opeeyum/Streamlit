@@ -16,7 +16,7 @@ st.markdown(f""" <style>
         padding-top: {padding}rem;
     }} </style> """, unsafe_allow_html=True)
 
-st.image("op_photo.PNG")
+st.image("op_photo.png")
 st.write(""" # Omprakash Mishra | **_Student_** """)
 st.write(""" ### Hello World! :sunglasses: \n ##### Welcome to my online home. \
         This is my personal website, designed, built, and edited entirely by me. \
