@@ -1,5 +1,9 @@
 import streamlit as st
 
+#File path
+
+img_path = "Images"
+
 Page_Config = {"page_title": 'OP Digital Profile', 
                "page_icon": "op_logo.PNG",
                "layout": 'wide',}
@@ -16,7 +20,7 @@ st.markdown(f""" <style>
         padding-top: {padding}rem;
     }} </style> """, unsafe_allow_html=True)
 
-st.image("op_photo.png")
+st.image(img_path+"op_photo.png")
 st.write(""" # Omprakash Mishra | **_Student_** """)
 st.write(""" ### Hello World! :sunglasses: \n ##### Welcome to my online home. \
         This is my personal website, designed, built, and edited entirely by me. \
@@ -47,24 +51,24 @@ def menubar():
 
 def contact():
     st.balloons()
-    ll_link  ="[Linkedin](https://www.linkedin.com/in/omprakash-mishra-b10779172)"
+    ll_link  ="[Linkedin](https://www.linkedin.com/in/opeeyum)"
     sololearn = "[SoloLearn]()"
-    github = "[Github]()"
+    github = "[Github](https://github.com/opeeyum)"
     with st.expander("Gmail"):
         st.markdown("_omprakash36mishra@gmail.com_")
     
     col1, col2 = st.columns([1, 6])
-    col1.image("linkedin_logo_rs.png")
+    col1.image(img_path+"linkedin_logo_rs.png")
     col2.write("")
     col2.write("")
     col2.markdown(ll_link)
     col1, col2 = st.columns([1, 6])
-    col1.image("sololearn_rs.jpg")
+    col1.image(img_path+"sololearn_rs.jpg")
     col2.write("")
     col2.write("")
     col2.markdown(sololearn)
     col1, col2 = st.columns([1, 6])
-    col1.image("github_logo.png")
+    col1.image(img_path+"github_logo.png")
     col2.write("")
     col2.write("")
     col2.markdown(github)
@@ -75,7 +79,7 @@ def internships():
     col1.write("")
     col1.write("")
     col1.write("")
-    col1.image("chercher_tech_logo.jfif")
+    col1.image(img_path+"chercher_tech_logo.jfif")
     col2.header("CherCher Tech")
     col2.write(""" #### Technical Content Developer, # \n 
     Currently working here.""")
@@ -85,7 +89,7 @@ def internships():
     col1, col2 = st.columns([1, 6])
     col1.write("")
     col1.write("")
-    col1.image("velvish_digital_logo.jfif")
+    col1.image(img_path+"velvish_digital_logo.jfif")
     col2.header("Velvish Digital")
     col2.write(""" #### Web Developer, # \n 
     Worked with Bootstrap, PHP, SQL.""")    
@@ -96,21 +100,21 @@ def education():
 
     col1, col2 = st.columns([1, 7])
     col1.write("")
-    col1.image("format.PNG")
+    col1.image(img_path+"format.PNG")
     col2.header("B Tech, Computer Science And Engineering")
     col2.write(""" #### Rewa Engineering College, # \n 
     2018-2022, CGPA 8.4""")
 
     col1, col2 = st.columns([1, 7])
     col1.write("")
-    col1.image("format.PNG")
+    col1.image(img_path+"format.PNG")
     col2.header("High School, PCM,")
     col2.write(""" #### Gurukul Sr. Sec. School - CBSE, # \n 
     2017-2018, Passed with 84.2%""")
 
     col1, col2 = st.columns([1, 7])
     col1.write("")
-    col1.image("format.PNG")
+    col1.image(img_path+"format.PNG")
     col2.header("10th,")
     col2.write(""" #### Gurukul Sr. Sec. School - CBSE, # \n 
     2015-2016, Passed with 9.0 CGPA""")    
@@ -118,7 +122,7 @@ def education():
 def skills_and_certification():
     st.balloons()
     col1, col2 = st.columns([1, 7])
-    col1.image("python_rs.png")
+    col1.image(img_path+"python_rs.png")
     col2.write("")
     with col2.expander("Python"):
         link = "[Verify Credentials](https://www.hackerrank.com/certificates/7a4e8de613bb)"
@@ -126,7 +130,7 @@ def skills_and_certification():
         st.markdown(link, unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 7])
-    col1.image("cpp_rs.png")
+    col1.image(img_path+"cpp_rs.png")
     col2.write("")
     with col2.expander("C++"):
         link = "[Verify Credentials](https://www.hackerrank.com/certificates/9cde7985e59f)"
@@ -134,7 +138,7 @@ def skills_and_certification():
         st.markdown(link, unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 7])
-    col1.image("c_rs.png")
+    col1.image(img_path+"c_rs.png")
     col2.write("")
     with col2.expander("C"):
         link = "[Verify Credentials](https://www.sololearn.com/Certificate/1089-14905430/jpg/)"
@@ -142,7 +146,7 @@ def skills_and_certification():
         st.markdown(link, unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 7])
-    col1.image("sql_rs.png")
+    col1.image(img_path+"sql_rs.png")
     col2.write("")
     with col2.expander("SQL"):
         link = "[Verify Credentials](https://www.hackerrank.com/certificates/5d84ba908650)"
