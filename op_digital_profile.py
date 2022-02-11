@@ -2,7 +2,7 @@ import streamlit as st
 
 #File path
 
-img_path = "Images"
+img_path = "Images/"
 
 Page_Config = {"page_title": 'OP Digital Profile', 
                "page_icon": "op_logo.PNG",
