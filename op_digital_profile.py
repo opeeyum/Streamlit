@@ -126,7 +126,7 @@ def skills_and_certification():
     col2.write("")
     with col2.expander("Python"):
         link = "[Verify Credentials](https://www.hackerrank.com/certificates/7a4e8de613bb)"
-        st.image("python_certificate_rs.PNG")
+        st.image(img_path+"python_certificate_rs.PNG")
         st.markdown(link, unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 7])
@@ -134,7 +134,7 @@ def skills_and_certification():
     col2.write("")
     with col2.expander("C++"):
         link = "[Verify Credentials](https://www.hackerrank.com/certificates/9cde7985e59f)"
-        st.image("cpp_certificate_rs.PNG")
+        st.image(img_path+"cpp_certificate_rs.PNG")
         st.markdown(link, unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 7])
@@ -142,7 +142,7 @@ def skills_and_certification():
     col2.write("")
     with col2.expander("C"):
         link = "[Verify Credentials](https://www.sololearn.com/Certificate/1089-14905430/jpg/)"
-        st.image("c_certificate_rs.jpg")
+        st.image(img_path+"c_certificate_rs.jpg")
         st.markdown(link, unsafe_allow_html=True)
 
     col1, col2 = st.columns([1, 7])
@@ -150,7 +150,7 @@ def skills_and_certification():
     col2.write("")
     with col2.expander("SQL"):
         link = "[Verify Credentials](https://www.hackerrank.com/certificates/5d84ba908650)"
-        st.image("sql_certificate_rs.PNG")
+        st.image(img_path+"sql_certificate_rs.PNG")
         st.markdown(link, unsafe_allow_html=True)
 
 def Projects(): 
