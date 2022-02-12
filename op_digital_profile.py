@@ -5,7 +5,7 @@ import streamlit as st
 img_path = "Images/"
 
 Page_Config = {"page_title": 'OP Digital Profile', 
-               "page_icon": "op_logo.PNG",
+               "page_icon": img_path+"op_logo.PNG",
                "layout": 'wide',}
 st.set_page_config(**Page_Config)
 
